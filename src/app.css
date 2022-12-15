@@ -1,2 +1,15 @@
 :root {
 }
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: NewYork;
+  src: url(/src/assets/fonts/Butler_Regular.otf);
+}
+
+.spacer {
+  width: 100%;
+}
