@@ -15,6 +15,7 @@
 
 	// TODO add transition
 	// TODO change to intersection observer API
+	// https://github.com/metonym/svelte-intersection-observer
 	// Toggle cover photo animation when element is visible on screen
 
 	onMount(() => {
