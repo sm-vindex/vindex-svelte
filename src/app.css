@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: NewYork;
-  src: url(/src/assets/fonts/Butler_Regular.otf);
+  src: url(./assets/fonts/Butler_Regular.otf);
 }
 
 .hidden {

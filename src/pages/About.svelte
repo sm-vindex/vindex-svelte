@@ -1,7 +1,7 @@
 <div id="About">
 	<h2>About The Vindex</h2>
 	<div class="container">
-		<img src="/src/assets/about/vindex.jpeg" alt=""/>
+		<img src="/src/assets/about/vindex.jpeg" />
 		<p>The Vindex is the oldest continuing publication at St. Mark’s. Established in February of 1877 by English teacher Walter Deane along with three student editors, at the start the Vindex was both a news magazine—featuring stories about on-campus happenings, summaries of athletic contests, and opinion pieces about both schoolwide and worldwide events—and a literary journal: replete with student-written poetry, short stories, essays and, later on, student art. It also served as the St. Mark’s yearbook until the advent of the Lion in 1918-1919 (and even then took over that responsibility again when the Lion was briefly suspended from 1925-1930).
 	
 A curious and fascinating glimpse into the past: In just its third issue (May 1877), the Vindex printed an interesting statistical analysis of the student body in the mid-to-late 19th century:
