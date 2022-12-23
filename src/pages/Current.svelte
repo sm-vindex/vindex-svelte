@@ -1,20 +1,37 @@
 <script>
+	// imports
+  import Cover from '../lib/Cover.svelte';
+  import EditorNotes from '../lib/EditorNotes.svelte';
+  import Gallery from '../lib/Gallery.svelte';
+
+	let scroll;
+
+	// TODO handle mobile version mediaquery for mobile version; hide all sections except for enter issue if user is on mobile
 </script>
 
-<div id="Current">
-	<h2>winter 2021</h2>
+<svelte:window bind:scrollY={scroll}/>
 
+<div id="Current">
+	<!-- CSS transition library -->
+	<link rel="stylesheet" href="https://unpkg.com/transition-style">
+	<h2>Time | Fall 2022 Issue</h2>
+	<Gallery {scroll}/>
+	<EditorNotes />
+	<Cover />
 </div>
 
 <style>
 	#Current {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%
+		width: 100%;
+		text-align: left;
 	}
+
 	h2 {
+		text-align: center;
 		font-family: 'EB Garamond';
+		font-size: 32px;
 		letter-spacing: 0.02em;
+		margin: 0;
 	}
+
 </style>

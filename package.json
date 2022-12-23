@@ -12,5 +12,13 @@
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "svelte": "^3.54.0",
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "disintegrate": "^1.0.1",
+    "firebase": "^9.15.0",
+    "rellax": "^1.12.1",
+    "svelte-inview": "^3.0.1",
+    "svelte-routing": "^1.6.0",
+    "transition-style": "^0.1.3"
   }
 }

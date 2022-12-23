@@ -1,25 +1,20 @@
 <script>
+  import { Router, Route } from "svelte-routing";
   import NavBar from "./lib/NavBar.svelte";
   import About from "./pages/About.svelte";
-  import Archive from "./pages/Archive.svelte";
-  import Contact from "./pages/Contact.svelte";
   import Current from "./pages/Current.svelte";
+    import Issue from "./pages/Issue.svelte";
   import Staff from "./pages/Staff.svelte";
-
-  export var selectedTab = "current";
 </script>
 
 <main>
-  <NavBar bind:selectedTab={selectedTab} />
-  {#if selectedTab == "current"}
-    <Current />
-  {:else if selectedTab === "archive"}
-    <Archive />
-  {:else if selectedTab === "about"}
-    <About />
-  {:else if selectedTab === "staff"}
-    <Staff />
-  {:else if selectedTab === "contact"}
-    <Contact />
-  {/if}
+  <Router>
+  <NavBar />
+  <div id="Routes">
+    <Route path="fall-2022-issue" component={Issue} />
+    <Route path="staff" component={Staff}/>
+    <Route path="about" component={About} />
+    <Route path="/" component={Current}></Route>
+  </div>
+  </Router>
 </main>

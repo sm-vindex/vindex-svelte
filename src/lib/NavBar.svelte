@@ -1,30 +1,39 @@
 <script>
-	export var selectedTab = "current";
+  import { Link } from "svelte-routing";
+  import { onMount } from "svelte";
+  
+  let height;
+
+  onMount(() => {
+    var r = document.documentElement;
+		r.style.setProperty("--nav-height", `${height}px`);
+    console.log(height);
+    console.log(r.style.getPropertyValue("--nav-height"));
+	});
 </script>
 
-<nav>
-	<a href="/" id="vindex-logo" on:click|preventDefault={() => (selectedTab = "current")}>VINDEX</a>
-	<a href="/" on:click|preventDefault={() => (selectedTab = "archive")}>Archive</a>
-	<a href="/" on:click|preventDefault={() => (selectedTab = "about")}>About</a>
-	<a href="/" on:click|preventDefault={() => (selectedTab = "staff")}>Staff</a>
-	<a href="/" on:click|preventDefault={() => (selectedTab = "contact")}>Contact</a>
+<nav bind:clientHeight={height}>
+  <Link classname="link" to="/" style="font-family:'EB Garamond'; font-size: 18px; font-weight: bold;">VINDEX</Link>
+	<a href="https://www.stmarksschool.org/vindex/archive" rel="external">Archive</a>
+	<Link classname="link" to="/about">About</Link>
+  <Link classname="link" to="/staff">Staff</Link>
 </nav>
 
 <style>
 	nav {
-    position: -webkit-sticky;
-		position: sticky;
+    position: sticky;
     top: 0;
-		/* for testing */
-    /* background-color: wheat;  */
+    background-color: whitesmoke; 
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 48px;
     padding-right: 48px;
     align-items: center;
+    width: 100%;
+    z-index: 3;
   }
-  a {
+  :global(a) {
     padding-left: 16px;
     padding-right: 16px;
     color: black;

@@ -1,8 +1,23 @@
-:root {
-}
+/* :root {
+} */
 
 body {
+  /* Disable scroll bar */
   margin: 0;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  /* Disable horizontal scroll */
+  overflow-x: hidden;
+  font-family: "EB Garamond";
+  background-color: whitesmoke;
+}
+
+body::-webkit-scrollbar {
+  /* Disable scroll bar */
+  /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 @font-face {
@@ -10,6 +25,6 @@ body {
   src: url(/src/assets/fonts/Butler_Regular.otf);
 }
 
-.spacer {
-  width: 100%;
+.hidden {
+  transition: opacity 0.5s ease-in;
 }
