@@ -16,7 +16,7 @@
 			var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.clientHeight);
 			var draw = length * scrollpercent;
 			// Reverse the drawing (when scrolling upwards)
-			butterfly.style.strokeDashoffset = `${draw - length}px`;
+			butterfly.style.strokeDashoffset = `${length - draw}px`;
 		}	
 	}
 
@@ -34,7 +34,7 @@
 			var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.clientHeight);
 			var draw = length * scrollpercent;
 			// Reverse the drawing (when scrolling upwards)
-			cloud.style.strokeDashoffset = `${-(draw - length)}px`;
+			cloud.style.strokeDashoffset = `${length - draw}px`;
 		}	
 	}
 

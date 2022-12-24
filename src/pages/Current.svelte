@@ -12,8 +12,6 @@
 <svelte:window bind:scrollY={scroll}/>
 
 <div id="Current">
-	<!-- CSS transition library -->
-	<link rel="stylesheet" href="https://unpkg.com/transition-style">
 	<h2>Time | Fall 2022 Issue</h2>
 	<Gallery {scroll}/>
 	<EditorNotes />

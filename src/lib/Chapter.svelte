@@ -1,4 +1,5 @@
 <script>
+  import { fade } from "svelte/transition";
 	export let chapter;
 	export let worksData;
 	export let currentChapterIndex;
@@ -16,7 +17,7 @@
 </script>
 
 <div class="Chapter">
-	<img src={imagePath} alt=""/>
+	<img in:fade={{ duration: 1000 }} src={imagePath} alt=""/>
 	<h3>chapter {currentChapterIndex + 1} · {chapter.title}</h3>
 	<h4>{chapter.quote}</h4>
 	<em>{chapter.author}</em>

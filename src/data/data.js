@@ -1,6 +1,7 @@
 import { poetryproseContent, poetryproseTitles, poetryproseAuthors } from "./poetryproseData.js";
 import { artContent, artTitles, artAuthors } from "./artData.js";
 import { chaptersData } from "./chaptersData.js";
+import { staffData } from "./staffData.js";
 
 class Work {
   constructor(id, title, author, content) {
@@ -10,8 +11,6 @@ class Work {
     this.content = content;
   }
 }
-
-// TODO call this from another file
 
 export const getWorksData = () => {
   const poetryproseWorks = [];
@@ -36,4 +35,8 @@ export const getWorksData = () => {
 
 export const getChaptersData = () => {
   return chaptersData;
+}
+
+export const getStaffData = () => {
+  return staffData;
 }

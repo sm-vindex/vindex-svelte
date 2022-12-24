@@ -1,7 +1,7 @@
 <script>
 	import { getWorksData } from "../data/data.js";
 	import { link } from "svelte-routing";
-	import { fly } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
   import { onMount } from "svelte";
 
 	let visible = false;
@@ -18,19 +18,20 @@
 	// https://github.com/metonym/svelte-intersection-observer
 	// Toggle cover photo animation when element is visible on screen
 
-	onMount(() => {
-		var observer = new IntersectionObserver(function(entries) {
+	var observer = new IntersectionObserver((entries) => {
 			if(entries[0].isIntersecting === true) {
 				visible = true;
 				console.log('bluh')
 			}
-		}, { threshold: [1] });
+		}, { threshold: [0.8] });
+
+	onMount(() => {
 		observer.observe(document.querySelector('#Cover'));
 	})
-
 </script>
 
 <section id="Cover">
+	{#if visible}
 		<div id="cover-page">
 			<a href="/fall-2022-issue" use:link>Enter Issue</a>
 			<img src="/assets/art/WritInWater.jpg" transition:fly="{{ x: -200, duration: 1000 }}" alt="" />
@@ -47,6 +48,7 @@
 		{/each}
 	</div>
 	<div></div>
+	{/if}
 </section>
 
 <style>
@@ -98,9 +100,8 @@
 	}
 
 	a:hover {
-		background-color: rgba(255, 255, 255, 0);
-		padding: 10px 26px 10px 26px;
-		font-size: 17px;
+		background-color: #a96d4d;
+		border-color: #a96d4d;
 		transition: ease-in-out 0.1s;
 		cursor: pointer;
 	}
