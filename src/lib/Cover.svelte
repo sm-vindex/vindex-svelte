@@ -33,7 +33,7 @@
 <section id="Cover">
 		<div id="cover-page">
 			<a href="/fall-2022-issue" use:link>Enter Issue</a>
-			<img src="/src/assets/art/WritInWater.jpg" transition:fly="{{ x: -200, duration: 1000 }}" alt="" />
+			<img src="/assets/art/WritInWater.jpg" transition:fly="{{ x: -200, duration: 1000 }}" alt="" />
 		</div>
 	<div id="works" transition:fly="{{ x: 200, duration: 1000 }}">
 		<!-- TODO make these links actually work! -->

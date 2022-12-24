@@ -1,5 +1,5 @@
 // paths to art files
-const path = "/public/assets/art/"
+const path = "/assets/art/"
 
 export const artContent = [
 	`${path}Reverie.jpeg`,
