@@ -2,7 +2,7 @@
 	export let chapter;
 	export let worksData;
 	export let currentChapterIndex;
-	const imagePath = `/src/assets/chapterArt/${chapter.title}.jpeg`;
+	const imagePath = `/public/assets/chapterArt/${chapter.title}.jpeg`;
 	const getChapterWorks = () => {
 		const works = [];
 		for (var i = 0; i < chapter.works.length; i++) {
