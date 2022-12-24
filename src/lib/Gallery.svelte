@@ -6,15 +6,15 @@
 		<div class="container">
 			<div id="column1" class="column" style:transform={`translate3d(0, ${scroll * 0.6}px, 0)`}>
 				<div class="text">There is no easy ending to this story, no neat tidying up of loose ends.</div>
-				<img id="Flow" src="/src/assets/art/Flow.jpg" alt=""/> 
+				<img id="Flow" src="/public/assets/art/Flow.jpg" alt=""/> 
 			</div> 
 			<div id="column2" class="column"  style:transform={`translate3d(0, ${scroll * 0.4}px, 0)`}>
-				<img id="Dreamlike" src="/src/assets/art/Reverie.jpeg" alt=""/> 
+				<img id="Dreamlike" src="/public/assets/art/Reverie.jpeg" alt=""/> 
 				<div class="text">how could I ever look the past in the eye and expect to be the same?</div>
 			</div> 
 			<div id="column3" class="column" style:transform={`translate3d(0, ${scroll * 0.7}px, 0)`}>
 				<div class="text">When my abuela was young, she had a dream</div>
-				<img id="NewPort" src="/src/assets/art/NewPort.jpg" alt=""/> 
+				<img id="NewPort" src="/public/assets/art/NewPort.jpg" alt=""/> 
 			</div>
 		</div>
 </section>
