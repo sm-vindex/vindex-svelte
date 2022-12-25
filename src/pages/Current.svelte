@@ -16,8 +16,8 @@
 	{#if !isMobile}
 		<Gallery {scroll}/>
 	{/if}
-	<EditorNotes />
-	<Cover />
+	<EditorNotes {isMobile} />
+	<Cover {isMobile}/>
 </div>
 
 <style>
@@ -29,7 +29,7 @@
 	h2 {
 		text-align: center;
 		font-family: 'EB Garamond';
-		font-size: 32px;
+		font-size: 30px;
 		letter-spacing: 0.02em;
 		margin: 0;
 	}

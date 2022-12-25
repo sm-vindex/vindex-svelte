@@ -2,6 +2,8 @@
 // @ts-nocheck
   import { onMount } from "svelte";
 
+	export let isMobile;
+
 	const setupButterflyAnimation = () => {
 		var butterfly = document.getElementById("butterfly-path");
 		var length = butterfly.getTotalLength();
@@ -39,8 +41,10 @@
 	}
 
 	onMount(() => {
-		setupButterflyAnimation();
-		setupScrollCloud();
+		if (!isMobile) {
+			setupButterflyAnimation();
+			setupScrollCloud();
+		}
 	})
 	
 </script>

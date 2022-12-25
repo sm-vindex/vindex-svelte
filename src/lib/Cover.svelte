@@ -4,6 +4,8 @@
 	import { fade, fly } from 'svelte/transition';
   import { onMount } from "svelte";
 
+	export let isMobile;
+
 	let visible = false;
 
 	const data = getWorksData();
@@ -13,11 +15,6 @@
 	console.log(poetryproseData);
 	console.log(artData);
 
-	// TODO add transition
-	// TODO change to intersection observer API
-	// https://github.com/metonym/svelte-intersection-observer
-	// Toggle cover photo animation when element is visible on screen
-
 	var observer = new IntersectionObserver((entries) => {
 			if(entries[0].isIntersecting === true) {
 				visible = true;
@@ -26,7 +23,11 @@
 		}, { threshold: [0.8] });
 
 	onMount(() => {
-		observer.observe(document.querySelector('#Cover'));
+		if (!isMobile) {
+			observer.observe(document.querySelector('#Cover'));
+		} else {
+			document.getElementById("cover-page").style.width = "100vw";
+		}
 	})
 </script>
 
@@ -36,17 +37,19 @@
 			<a href="/fall-2022-issue" use:link>Enter Issue</a>
 			<img src="/assets/art/WritInWater.jpg" transition:fly="{{ x: -200, duration: 1000 }}" alt="" />
 		</div>
-	<div id="works" transition:fly="{{ x: 200, duration: 1000 }}">
-		<!-- TODO make these links actually work! -->
-		<h3>Poetry / Prose</h3>
-		{#each poetryproseData as work}
+		{#if !isMobile}
+		<div id="works" transition:fly="{{ x: 200, duration: 1000 }}">
+			<!-- TODO make these links actually work! -->
+			<h3>Poetry / Prose</h3>
+			{#each poetryproseData as work}
+				<p class="work-and-author"><b>{work.title}</b> · <span class="author">{work.author}</span></p>
+			{/each}
+			<h3>Art</h3>
+			{#each artData as work}
 			<p class="work-and-author"><b>{work.title}</b> · <span class="author">{work.author}</span></p>
-		{/each}
-		<h3>Art</h3>
-		{#each artData as work}
-		<p class="work-and-author"><b>{work.title}</b> · <span class="author">{work.author}</span></p>
-		{/each}
-	</div>
+			{/each}
+		</div>
+		{/if}
 	<div></div>
 	{/if}
 </section>
