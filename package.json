@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "disintegrate": "^1.0.1",
-    "firebase": "^9.15.0",
     "rellax": "^1.12.1",
     "svelte-inview": "^3.0.1",
     "svelte-routing": "^1.6.0",

@@ -11,12 +11,12 @@ export const staffData = [
 		name: "Taylor Zhou",
 		title: "Editor-In-Chief",
 		bio: "Taylor is a senior at St. Mark’s School and has been on the Vindex team for 4 years. In life, she is a big fan of classical piano, and her favorite composer is Bach. She also loves doing classical ballet, which she calls an intense sport. This year, she is excited to lead the team and work with many other talented people on the team.",
-		imagePath: `${path}TaylorZhou.jpg`
+		imagePath: `${path}TaylorZhou.png`
 	},
 	{
 		name: "Ariel Cheng",
 		title: "Developer & UI/UX Designer",
-		bio: "Ariel Cheng is an aspiring personality psychology/AI alignment researcher who splits her time between Southborough, Massachusetts and Taipei, Taiwan. In her free time, she dabbles in poetry, starts silly projects on GitHub, eats far too much chocolate and tries to understand mechanistic interpretability, the Free Energy Principle, and personality psychology. If you want to debate free will, collaborate on a research idea or start a crazy, half-impossible project, contact her at shianghuacheng@stmarksschool.org",
+		bio: "Ariel Cheng is an aspiring personality psychology/AI alignment researcher. In her free time, she dabbles in poetry, starts silly projects on GitHub, does research and eats far too much chocolate. If you want to debate free will, collaborate on a research idea or start a crazy, half-impossible project, contact her at shianghuacheng@stmarksschool.org",
 		imagePath: `${path}ArielCheng.jpeg`
 	},
 	{

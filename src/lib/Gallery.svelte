@@ -71,5 +71,6 @@
 
 	.text {
 		width: inherit;
+		font-size: 18px;
 	}
 </style>

@@ -6,14 +6,16 @@
 
 	let scroll;
 
-	// TODO handle mobile version mediaquery for mobile version; hide all sections except for enter issue if user is on mobile
+	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 </script>
 
 <svelte:window bind:scrollY={scroll}/>
 
 <div id="Current">
 	<h2>Time | Fall 2022 Issue</h2>
-	<Gallery {scroll}/>
+	{#if !isMobile}
+		<Gallery {scroll}/>
+	{/if}
 	<EditorNotes />
 	<Cover />
 </div>

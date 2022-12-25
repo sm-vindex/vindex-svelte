@@ -1,5 +1,4 @@
 <script>
-	import { fade } from "svelte/transition";
 	export let work;
 </script>
 
@@ -10,7 +9,7 @@
 	</div>
 	<div class="content">
 		{#if work.content[0] === "/"}
-			<img src={work.content} in:fade={{ duration: 1000 }} alt="" />
+			<img src={work.content} alt="" />
 		{:else}
 			<p>{work.content}</p>
 		{/if}

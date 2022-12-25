@@ -6,7 +6,7 @@
 </script>
 
 <div class="Person">
-	<img src={imagePath} width="20%" alt=""/>
+	<img src={imagePath} alt=""/>
 	<div class="description">
 		<h3>{name}</h3>
 		<h4>{title}</h4>
@@ -17,7 +17,7 @@
 <style>
 	.Person {
 		display: flex;
-		width: 840px;
+		width: 720px;
 		text-align: left;
 	}
 	p {
