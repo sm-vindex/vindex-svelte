@@ -12,7 +12,7 @@
 <svelte:window bind:scrollY={scroll}/>
 
 <div id="Current">
-	<h2>Time | Fall 2022 Issue</h2>
+	<h2>Time | Winter 2022 Issue</h2>
 	{#if !isMobile}
 		<Gallery {scroll}/>
 	{/if}

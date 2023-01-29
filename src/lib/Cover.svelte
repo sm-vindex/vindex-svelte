@@ -34,7 +34,7 @@
 <section id="Cover">
 	{#if visible}
 		<div id="cover-page">
-			<a href="/fall-2022-issue" use:link>Enter Issue</a>
+			<a href="/winter-2022-issue" use:link>Enter Issue</a>
 			<img src="/assets/art/WritInWater.jpg" transition:fly="{{ x: -200, duration: 1000 }}" alt="" />
 		</div>
 		{#if !isMobile}

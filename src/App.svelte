@@ -11,7 +11,7 @@
   <Router>
   <NavBar />
   <div id="Routes">
-    <Route path="fall-2022-issue" component={Issue} />
+    <Route path="winter-2022-issue" component={Issue} />
     <Route path="staff" component={Staff}/>
     <Route path="about" component={About} />
     <Route path="/" component={Current}></Route>
