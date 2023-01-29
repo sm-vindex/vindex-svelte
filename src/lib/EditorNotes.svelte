@@ -15,7 +15,7 @@
 
 		function handleScrollButterfly() {
 			// FIXME inaccurate scroll percent
-			var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.clientHeight);
+			var scrollpercent = -3/4 * (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.clientHeight);
 			var draw = length * scrollpercent;
 			// Reverse the drawing (when scrolling upwards)
 			butterfly.style.strokeDashoffset = `${length - draw}px`;
@@ -83,7 +83,7 @@ like dew on the tip of a leaf.
 		
 In this issue, several St. Markers are going to take you on a journey of discovery, contemplation, and sharing what they’ve perceived as they press that pause button in transient time.
 	
-<em>Taylor Zhou, Editor-In-Chief</em>
+<em>Vindex Head Editors</em>
 </p>
 
 <div id="cloud-container">

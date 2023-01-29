@@ -6,7 +6,7 @@
 		<div class="container">
 			<div id="column1" class="column" style:transform={`translate3d(0, ${scroll * 0.6}px, 0)`}>
 				<div class="text">There is no easy ending to this story, no neat tidying up of loose ends.</div>
-				<img id="Flow" src="/assets/art/Flow.jpg" alt=""/> 
+				<img id="Flow" src="/assets/art/Flow.png" alt=""/> 
 			</div> 
 			<div id="column2" class="column"  style:transform={`translate3d(0, ${scroll * 0.4}px, 0)`}>
 				<img id="Dreamlike" src="/assets/art/Reverie.jpeg" alt=""/> 
