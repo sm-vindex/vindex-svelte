@@ -226,8 +226,6 @@ You had to move on, though. For him and for you. You distract yourself everyday,
 You made sugar cookies complete with horrendous attempts of decorations, sprinkles littering your well-used kitchen table. You hung up an ornament in honor of Lucas on that same plastic tree, and watched the littering of snowflakes on the frosty ground. Lifting your hot chocolate in a salute, you whispered into the delicate air, “Thank you, buddy. You made life worth living.”	
 `,
   `The book that was once so precariously placed on the shelf tipped backward and splayed itself open on my feet. The force of the impact cracked the spine, causing multiple pages to fly out, and flutter in the air around me. I stared at the pages in motion and realized how they will never return back to the book that they once were, bound together by glue and thread. Even if I pick up the pages from the floor and attempt to put them back as they were, they will never fit quite the same again. Like an altered jigsaw piece with no match or an ill-fitting item of clothing, grown out of and worn out. Just like how we will never return back to who we once were, destined to an ever-changing state that is life. Colors vary in their brightness (or lack thereof) throughout time, never appearing the same again. Sharp edges lose their corners and soft sides gain their rough points. I am not the person I was yesterday, the day before, or the month before that. And I never will be again, so how could I ever look the past in the eye and expect to be the same again?`,
-  `I woke up on a Friday morning. I was preparing for the weekend. It was very cold. I thought the farm lost power again. I blindly tried to find extra blankets to stay warm. After accepting that it was not going to get any warmer, I prepared myself to rush out of bed to put some clothes on. Frantically pulling a pink hoodie over my head, I noticed that my window had been left open all night. My cat loved to listen to the snow falling and to the rabbits maneuvering through the snow, so I had forgotten to close it. However, I had very little time to dwell on it as I was putting together an overnight bag. The snow was normal but the storm canceled school for two days. My parents could not take another day off work for me so I had to go over to my grandmother’s house. I ate my breakfast slowly, as I did not have to rush to the bus like I usually do. My dad took the time to make me an omelet with what looked like onions, peppers, and ham. I finished the food and walked over to my grandmother’s house. At her house, the smell always comforted me. There was never anything to worry about–no stress, no anxiety, and most importantly, no homework. My grandmother always made mac and cheese for me with the noodles that I liked. The noodles that looked like a swine's tail, all swirly. Her favourite pastime was collecting pigs. Ceramics, stuffed toys, pictures–you name it. With so many in sight throughout her home, they always made me chuckle a little. Why did she like pigs so much?
-At least, I knew why I liked pigs so much. They always remind me of her.`,
 ];
 
 export const poetryproseTitles = [
@@ -238,7 +236,6 @@ export const poetryproseTitles = [
   "Ode to a Bleeding Pen",
   "Unentitled",
   "Cracked Spines",
-  "[Untitled]",
 ];
 
 export const poetryproseAuthors = [
@@ -249,5 +246,4 @@ export const poetryproseAuthors = [
   "Gina Yang",
   "Hannah Macron",
   "Angelica Hiraldo",
-  "Justin Pare",
 ];
