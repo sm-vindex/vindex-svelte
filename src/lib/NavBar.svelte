@@ -17,6 +17,7 @@
 	<a href="https://www.stmarksschool.org/vindex/archive" rel="external">Archive</a>
 	<Link classname="link" to="/about">About</Link>
   <Link classname="link" to="/staff">Staff</Link>
+  <Link classname="link" to="/submit">Submit</Link>
 </nav>
 
 <style>

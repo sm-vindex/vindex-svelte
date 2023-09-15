@@ -3,8 +3,9 @@
   import NavBar from "./lib/NavBar.svelte";
   import About from "./pages/About.svelte";
   import Current from "./pages/Current.svelte";
-    import Issue from "./pages/Issue.svelte";
+  import Issue from "./pages/Issue.svelte";
   import Staff from "./pages/Staff.svelte";
+  import Submit from "./pages/Submit.svelte"
 </script>
 
 <main>
@@ -14,6 +15,7 @@
     <Route path="winter-2022-issue" component={Issue} />
     <Route path="staff" component={Staff}/>
     <Route path="about" component={About} />
+    <Route path="submit" component={Submit} />
     <Route path="/" component={Current}></Route>
   </div>
   </Router>
